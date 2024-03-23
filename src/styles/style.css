@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1b1a55;
+  color: #ffff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-flow: flex nowrap;
+  gap: 1rem;
+  margin: 0 10px;
+  margin-block: 20px;
+}
+
+main .input-notes {
+  padding: 10px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  main .input-notes {
+    width: 100%;
+  }
+}
